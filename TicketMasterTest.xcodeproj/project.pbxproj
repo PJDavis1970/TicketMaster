@@ -1,0 +1,883 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7611E2F184887AFCB752826 /* Pods_TicketMasterTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81822978617069144D42D0A6 /* Pods_TicketMasterTestTests.framework */; };
+		F289D8E971675CBA2438EFA1 /* Pods_TicketMasterTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A46D09B7CD85425A599C8D0 /* Pods_TicketMasterTest.framework */; };
+		FD259FFF2AB7932E007BE9F4 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD259FFE2AB7932E007BE9F4 /* UIView.swift */; };
+		FD25A0012AB799DA007BE9F4 /* NetworkRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25A0002AB799DA007BE9F4 /* NetworkRequestFactory.swift */; };
+		FD25A0032AB79A4E007BE9F4 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25A0022AB79A4E007BE9F4 /* Bundle.swift */; };
+		FD25A0062AB79AFE007BE9F4 /* APIGetEventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25A0052AB79AFE007BE9F4 /* APIGetEventList.swift */; };
+		FD25A0082AB79B30007BE9F4 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25A0072AB79B30007BE9F4 /* NetworkRequest.swift */; };
+		FD25A00A2AB79F46007BE9F4 /* EventBrowserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25A0092AB79F46007BE9F4 /* EventBrowserInfoVC.swift */; };
+		FD25A0102AB7A1E4007BE9F4 /* EventBrowserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25A00F2AB7A1E4007BE9F4 /* EventBrowserViewModel.swift */; };
+		FD25A01B2AB7AD60007BE9F4 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25A01A2AB7AD60007BE9F4 /* Strings.swift */; };
+		FD25A01E2AB7BA0D007BE9F4 /* PageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25A01D2AB7BA0D007BE9F4 /* PageDataModel.swift */; };
+		FD25A0202AB7C1D2007BE9F4 /* EventDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25A01F2AB7C1D2007BE9F4 /* EventDataModel.swift */; };
+		FD25A0222AB87C5E007BE9F4 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25A0212AB87C5E007BE9F4 /* String.swift */; };
+		FD25A0242AB8D3B5007BE9F4 /* EventImageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25A0232AB8D3B5007BE9F4 /* EventImageDataModel.swift */; };
+		FDAC8CCD2AB7896500140F64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAC8CCC2AB7896500140F64 /* AppDelegate.swift */; };
+		FDAC8CCF2AB7896500140F64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAC8CCE2AB7896500140F64 /* SceneDelegate.swift */; };
+		FDAC8CD12AB7896500140F64 /* EventBrowserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAC8CD02AB7896500140F64 /* EventBrowserVC.swift */; };
+		FDAC8CD42AB7896500140F64 /* EventBrowser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDAC8CD22AB7896500140F64 /* EventBrowser.storyboard */; };
+		FDAC8CD72AB7896500140F64 /* TicketMasterTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDAC8CD52AB7896500140F64 /* TicketMasterTest.xcdatamodeld */; };
+		FDAC8CD92AB7896700140F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDAC8CD82AB7896700140F64 /* Assets.xcassets */; };
+		FDAC8CDC2AB7896700140F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDAC8CDA2AB7896700140F64 /* LaunchScreen.storyboard */; };
+		FDAC8CE72AB7896700140F64 /* TicketMasterTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAC8CE62AB7896700140F64 /* TicketMasterTestTests.swift */; };
+		FDAC8CF12AB7896700140F64 /* TicketMasterTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAC8CF02AB7896700140F64 /* TicketMasterTestUITests.swift */; };
+		FDAC8CF32AB7896700140F64 /* TicketMasterTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAC8CF22AB7896700140F64 /* TicketMasterTestUITestsLaunchTests.swift */; };
+		FDAC8D072AB78DD900140F64 /* EventBrowserTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDAC8D052AB78DD900140F64 /* EventBrowserTVCell.xib */; };
+		FDAC8D082AB78DD900140F64 /* EventBrowserTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAC8D062AB78DD900140F64 /* EventBrowserTVCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDAC8CE32AB7896700140F64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDAC8CC12AB7896500140F64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDAC8CC82AB7896500140F64;
+			remoteInfo = TicketMasterTest;
+		};
+		FDAC8CED2AB7896700140F64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDAC8CC12AB7896500140F64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDAC8CC82AB7896500140F64;
+			remoteInfo = TicketMasterTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		048445A7FB11CA471277156E /* Pods-TicketMasterTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketMasterTestTests.debug.xcconfig"; path = "Target Support Files/Pods-TicketMasterTestTests/Pods-TicketMasterTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D021796D5FA79483A25ED4D /* Pods-TicketMasterTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketMasterTest.debug.xcconfig"; path = "Target Support Files/Pods-TicketMasterTest/Pods-TicketMasterTest.debug.xcconfig"; sourceTree = "<group>"; };
+		4F4623F9149BF61DCF9F5148 /* Pods-TicketMasterTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketMasterTest.release.xcconfig"; path = "Target Support Files/Pods-TicketMasterTest/Pods-TicketMasterTest.release.xcconfig"; sourceTree = "<group>"; };
+		6A46D09B7CD85425A599C8D0 /* Pods_TicketMasterTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketMasterTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81822978617069144D42D0A6 /* Pods_TicketMasterTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketMasterTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F3A6747819A0D9D99A0DEA2 /* Pods-TicketMasterTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketMasterTestTests.release.xcconfig"; path = "Target Support Files/Pods-TicketMasterTestTests/Pods-TicketMasterTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD259FFE2AB7932E007BE9F4 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		FD25A0002AB799DA007BE9F4 /* NetworkRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestFactory.swift; sourceTree = "<group>"; };
+		FD25A0022AB79A4E007BE9F4 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		FD25A0052AB79AFE007BE9F4 /* APIGetEventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGetEventList.swift; sourceTree = "<group>"; };
+		FD25A0072AB79B30007BE9F4 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		FD25A0092AB79F46007BE9F4 /* EventBrowserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBrowserInfoVC.swift; sourceTree = "<group>"; };
+		FD25A00F2AB7A1E4007BE9F4 /* EventBrowserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBrowserViewModel.swift; sourceTree = "<group>"; };
+		FD25A01A2AB7AD60007BE9F4 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		FD25A01D2AB7BA0D007BE9F4 /* PageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDataModel.swift; sourceTree = "<group>"; };
+		FD25A01F2AB7C1D2007BE9F4 /* EventDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDataModel.swift; sourceTree = "<group>"; };
+		FD25A0212AB87C5E007BE9F4 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		FD25A0232AB8D3B5007BE9F4 /* EventImageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventImageDataModel.swift; sourceTree = "<group>"; };
+		FDAC8CC92AB7896500140F64 /* TicketMasterTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketMasterTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDAC8CCC2AB7896500140F64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDAC8CCE2AB7896500140F64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FDAC8CD02AB7896500140F64 /* EventBrowserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBrowserVC.swift; sourceTree = "<group>"; };
+		FDAC8CD32AB7896500140F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EventBrowser.storyboard; sourceTree = "<group>"; };
+		FDAC8CD62AB7896500140F64 /* TicketMasterTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TicketMasterTest.xcdatamodel; sourceTree = "<group>"; };
+		FDAC8CD82AB7896700140F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDAC8CDB2AB7896700140F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDAC8CDD2AB7896700140F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDAC8CE22AB7896700140F64 /* TicketMasterTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketMasterTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDAC8CE62AB7896700140F64 /* TicketMasterTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketMasterTestTests.swift; sourceTree = "<group>"; };
+		FDAC8CEC2AB7896700140F64 /* TicketMasterTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketMasterTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDAC8CF02AB7896700140F64 /* TicketMasterTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketMasterTestUITests.swift; sourceTree = "<group>"; };
+		FDAC8CF22AB7896700140F64 /* TicketMasterTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketMasterTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FDAC8D052AB78DD900140F64 /* EventBrowserTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventBrowserTVCell.xib; sourceTree = "<group>"; };
+		FDAC8D062AB78DD900140F64 /* EventBrowserTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventBrowserTVCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDAC8CC62AB7896500140F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F289D8E971675CBA2438EFA1 /* Pods_TicketMasterTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDAC8CDF2AB7896700140F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7611E2F184887AFCB752826 /* Pods_TicketMasterTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDAC8CE92AB7896700140F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22872997EDC49AE2CD182805 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D021796D5FA79483A25ED4D /* Pods-TicketMasterTest.debug.xcconfig */,
+				4F4623F9149BF61DCF9F5148 /* Pods-TicketMasterTest.release.xcconfig */,
+				048445A7FB11CA471277156E /* Pods-TicketMasterTestTests.debug.xcconfig */,
+				9F3A6747819A0D9D99A0DEA2 /* Pods-TicketMasterTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E2713EFFDE601021224C1CB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A46D09B7CD85425A599C8D0 /* Pods_TicketMasterTest.framework */,
+				81822978617069144D42D0A6 /* Pods_TicketMasterTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD259FFD2AB79323007BE9F4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FD259FFE2AB7932E007BE9F4 /* UIView.swift */,
+				FD25A0022AB79A4E007BE9F4 /* Bundle.swift */,
+				FD25A0212AB87C5E007BE9F4 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FD25A0042AB79AEE007BE9F4 /* APICalls */ = {
+			isa = PBXGroup;
+			children = (
+				FD25A0052AB79AFE007BE9F4 /* APIGetEventList.swift */,
+			);
+			path = APICalls;
+			sourceTree = "<group>";
+		};
+		FD25A00E2AB7A075007BE9F4 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				FD25A01F2AB7C1D2007BE9F4 /* EventDataModel.swift */,
+				FD25A0232AB8D3B5007BE9F4 /* EventImageDataModel.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		FD25A0192AB7AD4E007BE9F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD25A01A2AB7AD60007BE9F4 /* Strings.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FD25A01C2AB7B9FD007BE9F4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FD25A01D2AB7BA0D007BE9F4 /* PageDataModel.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FDAC8CC02AB7896500140F64 = {
+			isa = PBXGroup;
+			children = (
+				FDAC8CCB2AB7896500140F64 /* TicketMasterTest */,
+				FDAC8CE52AB7896700140F64 /* TicketMasterTestTests */,
+				FDAC8CEF2AB7896700140F64 /* TicketMasterTestUITests */,
+				FDAC8CCA2AB7896500140F64 /* Products */,
+				22872997EDC49AE2CD182805 /* Pods */,
+				E2713EFFDE601021224C1CB6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FDAC8CCA2AB7896500140F64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC8CC92AB7896500140F64 /* TicketMasterTest.app */,
+				FDAC8CE22AB7896700140F64 /* TicketMasterTestTests.xctest */,
+				FDAC8CEC2AB7896700140F64 /* TicketMasterTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDAC8CCB2AB7896500140F64 /* TicketMasterTest */ = {
+			isa = PBXGroup;
+			children = (
+				FD25A0192AB7AD4E007BE9F4 /* Resources */,
+				FD259FFD2AB79323007BE9F4 /* Extensions */,
+				FDAC8D042AB78D3F00140F64 /* Network */,
+				FDAC8D032AB78D3300140F64 /* DataModels */,
+				FDAC8CFF2AB789C100140F64 /* Modules */,
+				FDAC8CCC2AB7896500140F64 /* AppDelegate.swift */,
+				FDAC8CCE2AB7896500140F64 /* SceneDelegate.swift */,
+				FDAC8CD82AB7896700140F64 /* Assets.xcassets */,
+				FDAC8CDA2AB7896700140F64 /* LaunchScreen.storyboard */,
+				FDAC8CDD2AB7896700140F64 /* Info.plist */,
+				FDAC8CD52AB7896500140F64 /* TicketMasterTest.xcdatamodeld */,
+			);
+			path = TicketMasterTest;
+			sourceTree = "<group>";
+		};
+		FDAC8CE52AB7896700140F64 /* TicketMasterTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC8CE62AB7896700140F64 /* TicketMasterTestTests.swift */,
+			);
+			path = TicketMasterTestTests;
+			sourceTree = "<group>";
+		};
+		FDAC8CEF2AB7896700140F64 /* TicketMasterTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC8CF02AB7896700140F64 /* TicketMasterTestUITests.swift */,
+				FDAC8CF22AB7896700140F64 /* TicketMasterTestUITestsLaunchTests.swift */,
+			);
+			path = TicketMasterTestUITests;
+			sourceTree = "<group>";
+		};
+		FDAC8CFF2AB789C100140F64 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC8D002AB789C600140F64 /* EventBrowser */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FDAC8D002AB789C600140F64 /* EventBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC8CD22AB7896500140F64 /* EventBrowser.storyboard */,
+				FDAC8CD02AB7896500140F64 /* EventBrowserVC.swift */,
+				FD25A0092AB79F46007BE9F4 /* EventBrowserInfoVC.swift */,
+				FDAC8D012AB78D0F00140F64 /* Views */,
+				FDAC8D022AB78D1900140F64 /* ViewModel */,
+			);
+			path = EventBrowser;
+			sourceTree = "<group>";
+		};
+		FDAC8D012AB78D0F00140F64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC8D052AB78DD900140F64 /* EventBrowserTVCell.xib */,
+				FDAC8D062AB78DD900140F64 /* EventBrowserTVCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FDAC8D022AB78D1900140F64 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD25A00F2AB7A1E4007BE9F4 /* EventBrowserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FDAC8D032AB78D3300140F64 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				FD25A01C2AB7B9FD007BE9F4 /* Common */,
+				FD25A00E2AB7A075007BE9F4 /* Events */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		FDAC8D042AB78D3F00140F64 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FD25A0002AB799DA007BE9F4 /* NetworkRequestFactory.swift */,
+				FD25A0072AB79B30007BE9F4 /* NetworkRequest.swift */,
+				FD25A0042AB79AEE007BE9F4 /* APICalls */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDAC8CC82AB7896500140F64 /* TicketMasterTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDAC8CF62AB7896700140F64 /* Build configuration list for PBXNativeTarget "TicketMasterTest" */;
+			buildPhases = (
+				73556E335BD5305FA2F60230 /* [CP] Check Pods Manifest.lock */,
+				FDAC8CC52AB7896500140F64 /* Sources */,
+				FDAC8CC62AB7896500140F64 /* Frameworks */,
+				FDAC8CC72AB7896500140F64 /* Resources */,
+				D851680983798542C7F42159 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TicketMasterTest;
+			productName = TicketMasterTest;
+			productReference = FDAC8CC92AB7896500140F64 /* TicketMasterTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDAC8CE12AB7896700140F64 /* TicketMasterTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDAC8CF92AB7896700140F64 /* Build configuration list for PBXNativeTarget "TicketMasterTestTests" */;
+			buildPhases = (
+				7D8505C2F945C15731EECB59 /* [CP] Check Pods Manifest.lock */,
+				FDAC8CDE2AB7896700140F64 /* Sources */,
+				FDAC8CDF2AB7896700140F64 /* Frameworks */,
+				FDAC8CE02AB7896700140F64 /* Resources */,
+				10364F6F987AA714C3568833 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDAC8CE42AB7896700140F64 /* PBXTargetDependency */,
+			);
+			name = TicketMasterTestTests;
+			productName = TicketMasterTestTests;
+			productReference = FDAC8CE22AB7896700140F64 /* TicketMasterTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDAC8CEB2AB7896700140F64 /* TicketMasterTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDAC8CFC2AB7896700140F64 /* Build configuration list for PBXNativeTarget "TicketMasterTestUITests" */;
+			buildPhases = (
+				FDAC8CE82AB7896700140F64 /* Sources */,
+				FDAC8CE92AB7896700140F64 /* Frameworks */,
+				FDAC8CEA2AB7896700140F64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDAC8CEE2AB7896700140F64 /* PBXTargetDependency */,
+			);
+			name = TicketMasterTestUITests;
+			productName = TicketMasterTestUITests;
+			productReference = FDAC8CEC2AB7896700140F64 /* TicketMasterTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDAC8CC12AB7896500140F64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					FDAC8CC82AB7896500140F64 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					FDAC8CE12AB7896700140F64 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = FDAC8CC82AB7896500140F64;
+					};
+					FDAC8CEB2AB7896700140F64 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = FDAC8CC82AB7896500140F64;
+					};
+				};
+			};
+			buildConfigurationList = FDAC8CC42AB7896500140F64 /* Build configuration list for PBXProject "TicketMasterTest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDAC8CC02AB7896500140F64;
+			productRefGroup = FDAC8CCA2AB7896500140F64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDAC8CC82AB7896500140F64 /* TicketMasterTest */,
+				FDAC8CE12AB7896700140F64 /* TicketMasterTestTests */,
+				FDAC8CEB2AB7896700140F64 /* TicketMasterTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDAC8CC72AB7896500140F64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDAC8CDC2AB7896700140F64 /* LaunchScreen.storyboard in Resources */,
+				FDAC8CD92AB7896700140F64 /* Assets.xcassets in Resources */,
+				FDAC8D072AB78DD900140F64 /* EventBrowserTVCell.xib in Resources */,
+				FDAC8CD42AB7896500140F64 /* EventBrowser.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDAC8CE02AB7896700140F64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDAC8CEA2AB7896700140F64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10364F6F987AA714C3568833 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicketMasterTestTests/Pods-TicketMasterTestTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicketMasterTestTests/Pods-TicketMasterTestTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TicketMasterTestTests/Pods-TicketMasterTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73556E335BD5305FA2F60230 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TicketMasterTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D8505C2F945C15731EECB59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TicketMasterTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D851680983798542C7F42159 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicketMasterTest/Pods-TicketMasterTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicketMasterTest/Pods-TicketMasterTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TicketMasterTest/Pods-TicketMasterTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDAC8CC52AB7896500140F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD25A0202AB7C1D2007BE9F4 /* EventDataModel.swift in Sources */,
+				FDAC8CD12AB7896500140F64 /* EventBrowserVC.swift in Sources */,
+				FD25A01B2AB7AD60007BE9F4 /* Strings.swift in Sources */,
+				FD25A0102AB7A1E4007BE9F4 /* EventBrowserViewModel.swift in Sources */,
+				FD25A0242AB8D3B5007BE9F4 /* EventImageDataModel.swift in Sources */,
+				FD25A0032AB79A4E007BE9F4 /* Bundle.swift in Sources */,
+				FDAC8CD72AB7896500140F64 /* TicketMasterTest.xcdatamodeld in Sources */,
+				FDAC8D082AB78DD900140F64 /* EventBrowserTVCell.swift in Sources */,
+				FD25A0082AB79B30007BE9F4 /* NetworkRequest.swift in Sources */,
+				FD25A01E2AB7BA0D007BE9F4 /* PageDataModel.swift in Sources */,
+				FD25A0012AB799DA007BE9F4 /* NetworkRequestFactory.swift in Sources */,
+				FD25A0222AB87C5E007BE9F4 /* String.swift in Sources */,
+				FDAC8CCD2AB7896500140F64 /* AppDelegate.swift in Sources */,
+				FD25A00A2AB79F46007BE9F4 /* EventBrowserInfoVC.swift in Sources */,
+				FD25A0062AB79AFE007BE9F4 /* APIGetEventList.swift in Sources */,
+				FD259FFF2AB7932E007BE9F4 /* UIView.swift in Sources */,
+				FDAC8CCF2AB7896500140F64 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDAC8CDE2AB7896700140F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDAC8CE72AB7896700140F64 /* TicketMasterTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDAC8CE82AB7896700140F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDAC8CF32AB7896700140F64 /* TicketMasterTestUITestsLaunchTests.swift in Sources */,
+				FDAC8CF12AB7896700140F64 /* TicketMasterTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDAC8CE42AB7896700140F64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDAC8CC82AB7896500140F64 /* TicketMasterTest */;
+			targetProxy = FDAC8CE32AB7896700140F64 /* PBXContainerItemProxy */;
+		};
+		FDAC8CEE2AB7896700140F64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDAC8CC82AB7896500140F64 /* TicketMasterTest */;
+			targetProxy = FDAC8CED2AB7896700140F64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDAC8CD22AB7896500140F64 /* EventBrowser.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDAC8CD32AB7896500140F64 /* Base */,
+			);
+			name = EventBrowser.storyboard;
+			sourceTree = "<group>";
+		};
+		FDAC8CDA2AB7896700140F64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDAC8CDB2AB7896700140F64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDAC8CF42AB7896700140F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDAC8CF52AB7896700140F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDAC8CF72AB7896700140F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D021796D5FA79483A25ED4D /* Pods-TicketMasterTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y65P3F9A9C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TicketMasterTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = EventBrowser;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pjdavis1970.TicketMasterTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDAC8CF82AB7896700140F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F4623F9149BF61DCF9F5148 /* Pods-TicketMasterTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y65P3F9A9C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TicketMasterTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = EventBrowser;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pjdavis1970.TicketMasterTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FDAC8CFA2AB7896700140F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 048445A7FB11CA471277156E /* Pods-TicketMasterTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pjdavis1970.TicketMasterTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicketMasterTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TicketMasterTest";
+			};
+			name = Debug;
+		};
+		FDAC8CFB2AB7896700140F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F3A6747819A0D9D99A0DEA2 /* Pods-TicketMasterTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pjdavis1970.TicketMasterTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicketMasterTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TicketMasterTest";
+			};
+			name = Release;
+		};
+		FDAC8CFD2AB7896700140F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pjdavis1970.TicketMasterTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TicketMasterTest;
+			};
+			name = Debug;
+		};
+		FDAC8CFE2AB7896700140F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pjdavis1970.TicketMasterTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TicketMasterTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDAC8CC42AB7896500140F64 /* Build configuration list for PBXProject "TicketMasterTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDAC8CF42AB7896700140F64 /* Debug */,
+				FDAC8CF52AB7896700140F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDAC8CF62AB7896700140F64 /* Build configuration list for PBXNativeTarget "TicketMasterTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDAC8CF72AB7896700140F64 /* Debug */,
+				FDAC8CF82AB7896700140F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDAC8CF92AB7896700140F64 /* Build configuration list for PBXNativeTarget "TicketMasterTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDAC8CFA2AB7896700140F64 /* Debug */,
+				FDAC8CFB2AB7896700140F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDAC8CFC2AB7896700140F64 /* Build configuration list for PBXNativeTarget "TicketMasterTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDAC8CFD2AB7896700140F64 /* Debug */,
+				FDAC8CFE2AB7896700140F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FDAC8CD52AB7896500140F64 /* TicketMasterTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FDAC8CD62AB7896500140F64 /* TicketMasterTest.xcdatamodel */,
+			);
+			currentVersion = FDAC8CD62AB7896500140F64 /* TicketMasterTest.xcdatamodel */;
+			path = TicketMasterTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FDAC8CC12AB7896500140F64 /* Project object */;
+}
