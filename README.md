@@ -36,5 +36,10 @@ I have created the basic models for data needed for this demo.  I did create ext
 
 ## UI Tests
 
+Unfortunatly I ran out of time to impliment these.
+
+## Moving Forward and Improvements
+
+Given more time I would have created a data manager to control all databases.  The data manager would have control over all downloading and caching of model databases.  The view models would then query the data manager for all data needed for that view model.
 
 
