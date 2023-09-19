@@ -34,21 +34,4 @@ final class TicketMasterTestTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
-    func testAPIEndpoints() throws {
-        var res: Any?
-        let expectation = self.expectation(description: "Correct response")
-        guard let req = APIGetEventList.build() else { return }
-        req.sendRequest(progress: nil, finished:  { response, error in
-            res = response
-            expectation.fulfill()
-        })
-        waitForExpectations(timeout: 60, handler: nil)
-        XCTAssert(res != nil)
-    }
-    
-    func testEventViewModel() throws {
-        
-    }
-
 }
