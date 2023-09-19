@@ -25,7 +25,6 @@ extension NetworkRequest {
     private static func RequestHeaders() -> HTTPHeaders {
         var headers: HTTPHeaders = [
             "Content-Type": "application/json",
-            "Accepts":"application/vnd.zoomie.v2+json"
         ]
         return headers
     }
