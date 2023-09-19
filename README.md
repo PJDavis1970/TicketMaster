@@ -31,8 +31,8 @@ I have created the basic models for data needed for this demo.  I did create ext
 
 ## Unit Tests
 
-- testAPIEndpoints : This will check the endpoint is responsive and correct
-
+- NetworkApiTests : Here you can check the endpoints are getting a response and we have corect urls and permissions to access server
+- ViewModelTest : Here we can test the models are being created ok from the API's.  All models will have there own test.  In our case we have EventBrowserViewModelTests.  This will check model is being setup correctly from response JSON.
 
 ## UI Tests
 
